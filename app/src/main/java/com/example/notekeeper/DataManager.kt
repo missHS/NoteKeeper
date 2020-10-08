@@ -19,5 +19,8 @@ class DataManager {
 
         course = CourseInfo(title="Java Fundamentals: The Java Language", courseId = "java_fundamentals")
         courses.set(course.courseId, course)
+
+        course = CourseInfo(courseId = "java_core", title = "Java Fundamentals: The Core Platform")
+        courses.set(course.courseId, course)
     }
 }
