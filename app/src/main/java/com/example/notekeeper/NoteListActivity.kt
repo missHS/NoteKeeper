@@ -2,10 +2,13 @@ package com.example.notekeeper
 
 import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.widget.ArrayAdapter
+
 import androidx.appcompat.app.AppCompatActivity
 
 import kotlinx.android.synthetic.main.activity_note_list.*
+import kotlinx.android.synthetic.main.content_note_list.*
+import kotlinx.android.synthetic.main.fragment_note_list.*
 
 class NoteListActivity : AppCompatActivity() {
 
@@ -18,6 +21,10 @@ class NoteListActivity : AppCompatActivity() {
             val activityIntent = Intent(this,MainActivity::class.java)
             startActivity(activityIntent)
         }
+
+        listNotes.adapter = ArrayAdapter(this,
+        android.R.layout.simple_list_item_1,
+        DataManager.notes)
     }
 
 }
