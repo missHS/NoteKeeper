@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         spinnerCourses.adapter = adapterCourses
 
 
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
