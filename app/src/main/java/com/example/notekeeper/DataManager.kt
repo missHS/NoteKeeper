@@ -24,7 +24,7 @@ object DataManager {
     }
 
     private fun initializeNotes(){
-        var note = NoteInfo((courses["android_intents"]), "First Note", "My first note")
+        var note = NoteInfo((courses.get("android_intents")), "First Note", "My first note")
         notes.add(note)
 
     }
